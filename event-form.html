@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Event Registration Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Registration Form</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <section>
+                <fieldset>
+                    <legend><h1>Personal Info</h1></legend>
+                    <br><br>
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid" pattern="SID[0-9]{10}" required>
+                    <br><br>
+                    <label for="Name">User Name:
+                        <input type="text" id="name" name="name" minlength="3" maxlength="20" pattern="A-Za-z" required>
+                    </label>
+                    <br><br>
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email">
+                    </label>
+                    <br><br>
+                    <label for="phone no">Phone No:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    <br><br>
+                    <label for="DOB">Date Of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend><h2>Ticket Choice</h2></legend>
+                    <br><br>
+                    <label for="ticket">Tickets:</label>
+                    <select name="ticket" id="ticket">
+                        <option value="">Select Ticket</option>
+                        <option value="visters">Visters</option>
+                        <option value="student">Students</option>
+                        <option value="teachers">Teachers</option>
+                        <option value="vip">VIP Ticket</option>
+                    </select>
+                    <br><br>
+                    <label for="badge">Choose Your Badge colour:</label>
+                    <input type="color" id="badge" name="badge" value="#00000">
+                    <br><br>
+                    <label for="skill">Skill level(1-10)</label>
+                    <input type="range" id="skill" name="skill" min="1" max="10" value="5">
+                    <br><br>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>Workshop Choices</h2>
+                <p>Select the workshop you want</p>
+                <input type="checkbox" id="web" name="workshop" value="web-development">
+                <label for="web">Web Development</label>
+                <br>
+                <input type="checkbox" id="cyber" name="workshop" value="cyber-security">
+                <label for="cyber">Cyber Security</label>
+                <br>
+                <input type="checkbox" id="ai" name="workshop" value="artificial-intelligence">
+                <label for="ai">Artificial Intelligence</label>
+                <br>
+                <input type="checkbox" id="robotics" name="workshop" value="robotics">
+                <label for="robotics">Robotics</label>
+                <br>
+            </section>
+
+            <section>
+                <h2>Comments</h2>
+                <label for="comments" >Additional Notes</label>
+                <br>
+                <textarea name="comments" id="comments" rows="5" cols="40" maxlength="500" placeholder="Tell us about your expectations about the event"></textarea>
+            </section>
+            <br>
+            <input type="radio" required id="terms" name="terms"> terms and conditions applied
+            <br><br>
+<button type="submit">Register Now</button>
+<button type="reset">Reset From</button>
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
